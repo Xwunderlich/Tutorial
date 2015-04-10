@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,12 +17,96 @@
 <li><a href="CSS.html">CSS</a></li>
 <li><a href="Javascript.html">JavaScript</a></li>
 <li><a href="Ruby.html">Ruby</a></li>
-<li><a href="Reference.html">References</a></li>
 </ul>
 </div>
 <!--end nav-->
 <div id="content">
-
+    <h2>What is Ruby?</h2>
+    <ol>
+      <li>Ruby is an object oriented general purpose programming language.</li>
+      <li>Developed in the mid-1990s by Yukihiro Matsumoto.</li>
+      <li>Ruby is a coss platform language.</li>
+      <li>Popular with rails for serverside programming.</li>
+    </ol>
+    </ol>  
+    <h2>Why learn Ruby?</h2> 
+    <p>It is a unique language designed with the programmer in mind.</p>
+    <h2>Ruby basics</h2>
+    <ul>
+      <li>Syntax is somewhat flexible, but the prevailing wisdom is to use very turse syntax.</li>
+      <li>Ruby code is interpreted, not compiled.</li>
+      <li>Ruby is dynamicly typed.</li>
+      <li>Ruby is object oriented.</li>
+      <li>Ruby has classes.</li>
+      <li>Memory Managment is automatic.</li>
+    </ul>
+    <h2>Getting started</h2>
+    <p>You can see how to <a href="https://www.ruby-lang.org/en/documentation/installation/">install Ruby</a>, and run interactive ruby (IRB) on your machines.  However, for the purposes of this tutorial, and to see how you like Ruby, I would reccomend following along in this <a href="http://joshnuss.github.io/mruby-web-irb/">online IRB website</a>.</P>
+    <h2>Hello world!</h2>
+    <p>Lets get started with the basics.</p><br />
+    <pre><code>>> puts "Hello World"</code></pre><br />
+    <p>Will result in this output in IRB:</p><br />
+    <pre><code>Hello World
+=>nil</code></pre><br />
+    <h2>Simple Function</h2>
+    <p>Lets apply this to a simple function.</p><br />
+    <pre><code>>>  def foo
+      puts "Hello World"
+    end
+>>  foo</code></pre><br />
+    <p>Will result in this output in IRB:</p><br />
+    <pre><code>Hello World
+=>nil</code></pre><br />
+    <p>Lets break down the code above.  Def is the signal that we are defining a function.  End tells the interpreter where the definition ends, everything inbetween is part of the function named foo.  We can then call foo to execute the code within the function.  This may be syntacticly differnt from languages which use nested brackets, but logically it is similar.</p>
+    <h2>If then statement</h2>
+    <p>Lets look at an If, Then statement in Ruby.</p><br />
+    <pre><code>>>  x=1
+    y=1
+    if (x==y)
+      puts "X is equal to Y."
+    else
+      puts "X is not equal to Y."
+    end</code></pre><br />
+    <p>Traditionally in Ruby the parentheses are ommited, as below.</p><br />
+    <pre><code>>>  x=1
+    y=1
+    if x==y
+      puts "X is equal to Y."
+    else
+      puts "X is not equal to Y."
+    end</code></pre><br />
+    <p>Which should return:</p><br />
+    <pre><code>X is equal to Y.
+=>nil</code></pre><br />
+    <p>Conditional &amp; logical opporators should be intuitive if you have programed before.  You can always look up any <a href="http://www.tutorialspoint.com/ruby/ruby_operators.htm">Ruby operatos</a> you are unsure of.</p><br />
+    <h2>Do it yourself!</h2>
+    <p>Try to design a function which can determine if a given number is positive or negative.  You can test your function by passing differnt values.  Be sure to test boundry cases, and verify that your function works as expected.</p><br>
+    <h2>Loops in Ruby.</h2>
+    <p>Loops should be familiar to people with a little programming experience, but there are also a couple that are not so common.</p><br />
+    <ul>
+      <li>while</li>
+      <li>for</li>
+      <li>until</li>
+      <li>break</li>
+      <li>redo</li>
+      <li>retry</li>
+    </ul>
+    <pre><code>>>  while i < 100
+      i+=1
+    end</code></pre><br />
+    <p>This will increment i up to 100.  Note that there is no ++ incrementor in Ruby.</p><br />
+    <h2>Arrays in Ruby</h2>
+    <p>Arrays in Ruby can have mixed types, including arrays.  Negative indicies represent a location relative to the end of the array.  Indicies start at 0.  Arrays can be created in a couple ways.</p><br />
+    <h3>Literal</h3>
+    <pre><code>ray [3, a, "Robbie", 3.1415]</code></pre><br />
+    <pre><code>=> [3, a, "Robbie", 3.1415]</code></pre><br />
+    <h3>Array.new</h3>
+    <pre><code>ray = Array.new []</code></pre><br />
+    <pre><code>=> []</code></pre><br />
+    <h3>Array.new with length</h3>
+    <pre><code>ray = Array.new(4) []</code></pre><br />
+    <pre><code>=> [nil, nil, nil, nil]</code></pre><br />
+    <p>This should be a good primer on Ruby, obviously there is much more to learn.  The authorotative source for Ruby information is the <a href="http://ruby-doc.org/docs/ruby-doc-bundle/Manual/man-1.4/">Ruby Language Reference Manual</a>.  Good luck!</p>
 </div>
 </body>
 </html>
