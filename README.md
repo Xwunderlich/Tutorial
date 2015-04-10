@@ -4,7 +4,7 @@
 ## Roles
 * CSS/HTML Manager: Gan Fang
 * JavaScript Manager: Xander Wunderlich
-* Ruby Manager: Alexander Cueto
+* Ruby Manager: Robert Noble
 * Documentation: Gan Fang
 
 ## Contributions
@@ -15,13 +15,13 @@ Yiming Lu：
 Composed the page of HTML Tutorial. 20%
 
 Alexander Cueto: 
-
+Composed the JavaScript Page. 20%
 
 Robert Noble: 
-Composed the CSS Stylesheet and JavaScript Page. 20%
+Composed the CSS Stylesheet and Ruby Page. 20%
 
 Xander Wunderlich: 
-Composed the Index page and JavaScript Page. 20%
+Composed the Index page and CSS Adaption. 20%
 
 Gan Fang: 
 Composed the CSS Tutorial Page, Reference Page, updated Index Page. Documentation 20%
