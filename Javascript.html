@@ -15,16 +15,16 @@
                 <li><a href="CSS.html">CSS</a></li>
                 <li><a href="Javascript.html">JavaScript</a></li>
                 <li><a href="Ruby.html">Ruby</a></li>
-				<li><a href="Reference.html">References</a></li>
+                <li><a href="Reference.html">References</a></li>
             </ul>
         </div>
         
     <!--end nav-->
     <div id="content">
-	
-	<h1>Tutorial: Intro to JavaScript</h1>
-	<hr />
-	
+    
+    <h1>Tutorial: Intro to JavaScript</h1>
+    <hr />
+    
     <h2>What is JavaScript?</h2>
     <ol>
       <li>JavaScript is a prototype-based scripting language developed by Netscape Communications in 1995</li>
@@ -43,13 +43,25 @@
     </ul>
     <h2>JavaScript syntax</h2>
     <ol>
-      <li>Declarations</li>
-      <li>Methods</li>
+      <li>Objects<br />objects are defined as follows with a colon between the attribute and the value
+      <br /><pre><code>var class = {type:"CSE", number:"3901", name:"Web Apps"};</code></pre></li>
+      <li>Functions<br />
+      functions make up most of JavaScript and are defined as follows:
+      <br /><pre><code>function add(a,b){
+  return a+b;
+}</code></pre>
+<br />
+<b>Note</b>: functions do not require a return statement</li>
+
       <li>Listeners</li>
+      <pre><code>document.getElementById("id").addEventListener("click",function);</code></pre><br />
+      there are various other events that can be listened for including: keyup, change and keypress.
     </ol>
-    <h2>DOM</h2> 
+    <h2>DOM (Document Object Model)</h2> 
+    The DOM is the interface between JavaScript and the HTML tree.
     <h2>Accessing the DOM</h2> 
     The DOM is accessed by using a get method though the document object
+    <br />
     <pre><code>document.getElementById("identification");
 //this get method retrieves a DOM element based on Id
 document.getElementsByTagName("a");
@@ -62,6 +74,20 @@ document.getElementsByClassName("subclass");
     <pre><code>element.innerHTML= //insert desired contents of the element here 
 element.attribute= //insert desired value of the element's specified attribute here 
 element.style.property= //insert desired value of the element's CSS style property here</code></pre>
+
+<h2>Do it Yourself!</h2>
+How would you create a function to determine if a number is positive?
+<br />
+<textarea rows="4" cols="50">
+</textarea>
+<br />
+<br />
+Does it look like this?
+<button id="show">click to show</button>
+<div id="hidden"><pre><code>function is_positive(num) {
+    return a>0;
+}</code></pre></div>
+
     <h4>Great!  You're in good shape to write some basic JavaScript to spice up your webpage.</h4>
     <h4>...but you don't just want to stop there, right?</h4>
     
@@ -90,7 +116,11 @@ element.style.property= //insert desired value of the element's CSS style proper
              }
             i++;
         }
+        function show () {
+            document.getElementById("hidden").style.display = "block";
+        }
         document.getElementById("findout").addEventListener("click",findout);
+        document.getElementById("show").addEventListener("click",show);
     </script>
 </body>
 

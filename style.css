@@ -7,6 +7,9 @@ body {
 pre, p {
 display:inline-block;
 }
+#hidden {
+display:none;
+}
 #content {
     background-color: #d0d0d0;
     margin-left: 10%;
