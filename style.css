@@ -1,0 +1,215 @@
+body {
+	background-color: #880000;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+.button {
+	float: left;
+	padding-left: 30px;
+}
+#content {
+	background-color: #d0d0d0;
+	margin-left: 40px;
+	margin-right: 40px;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-shadow: 1px 1px 7px #000011;
+	position: absolute;
+	z-index: 1;
+	margin-top: 120px;
+}
+
+#container {
+	min-width: 875px;
+}
+
+#home {
+	background-color: #d0d0d0;
+	margin-left: 40px;
+	margin-right: 40px;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-shadow: 1px 1px 7px #000011;
+	position: absolute;
+	z-index: 1;
+	margin-top: 420px;
+}
+#spacer {
+	height: 20px;
+	clear: both;
+	position: relative;
+	bottom: 20px;
+	background-color: #000000;
+}
+/*
+#navigation {
+	position: fixed;
+	z-index: 10;
+	min-height: 45px;
+	width: 100%;
+	background-color: rgba(10, 10, 10, 0.85);
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-family: Arial, Helvetica, serif;
+	font-size: 15px;
+    color: #d0d0d0;
+}
+*/
+#navigation a:link, #navigation a:visited {
+	color: #d0d0d0;
+	text-decoration: none;
+}
+#navigation a:hover{
+	color: #ffffff;
+}
+#info {
+	background-color: #880000; 
+	font-family: Arial, Helvetica, serif;
+	font-size: 16px;
+    color: #d0d0d0;
+    padding: 0px;
+    margin-left: 15px;
+    margin-top:47px;
+    text-shadow: 2px 2px 3px #000011;
+    position: relative;
+    float: left;
+    z-index: 2;
+}
+#info a:link, #info a:visited {
+	color: #d0d0d0;
+	text-decoration: none;
+}
+#info a:hover{
+	color: #ffffff;
+}
+#name {
+	font-family: Arial, Helvetica, serif;
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -130px;
+    top: 192px;
+    background-color: #880000; 
+    color: #ffffff;
+    line-height: 0%;
+    z-index: 3;
+    font-style: italic;
+    font-size: 22px;
+    text-shadow: -3px 3px 3px #000011;
+    float: left;
+}
+/*delete rotation*/
+#category {
+	font-family: Arial, Helvetica, serif;
+    background-color: #880000; 
+    color: #ffffff;
+    line-height: 0%;
+    z-index: 3;
+    font-style: italic;
+    font-size: 22px;
+    text-shadow: 3px 3px 3px #000011;
+    float: left;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.student {
+	padding-top: 10px;
+}
+
+#content ul {
+	list-style-type: none;
+}
+
+.alumni {
+	padding-top: 5px;
+	line-height: 100%;
+}
+.alumni h3 {
+	line-height: 0%;
+}
+
+
+#image{
+	margin-top: 59px;
+	margin-left: 60px;
+	box-shadow: 4px 4px 5px #000011;
+	max-width: 552px;
+	height: 325px;
+	float: left;
+	z-index: 3;
+}
+#navigation {
+	background-color: rgba(10, 10, 10, 0.85);
+	z-index: 10;
+	min-width: 875px;
+}
+
+#navigation ul {
+	text-align: left;
+	display: inline;
+	margin: 0;
+ 	padding: 15px 4px 17px 0;
+	list-style: none;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	z-index: 10;
+}
+#navigation ul li {
+	font-family: Arial, Helvetica, serif;
+	font-size: 15px;
+    color: #d0d0d0;
+	display: inline-block;
+	margin-right: -4px;
+	position: relative;
+	padding: 15px 20px;
+	background: rgba(10, 10, 10, 0.85);
+	cursor: pointer;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+#navigation ul li:hover {
+	background: rgba(10, 10, 10, 0.85);
+	color: #fff;
+	z-index: 10;
+}
+#navigation ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+#navigation ul li ul li { 
+  background: rgba(10, 10, 10, 0.85);
+  display: block; 
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+  z-index: 10;
+}
+#navigation ul li ul li:hover { background: #rgba(10, 10, 10, 0.85); }
+#navigation ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
