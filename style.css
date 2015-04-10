@@ -4,6 +4,9 @@ body {
     padding: 0px;
     border: 0px;
 }
+pre, p {
+display:inline-block;
+}
 #content {
     background-color: #d0d0d0;
     margin-left: 40px;
@@ -14,6 +17,7 @@ body {
     position: absolute;
     z-index: 1;
     margin-top: 40px;
+    width:1000px;
 }
 
 #navigation a:link, #navigation a:visited {

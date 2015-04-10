@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>Tutorial: Intro to JavaScript</title>
@@ -19,8 +20,45 @@
         
     <!--end nav-->
     <div id="content">
-    
+    <h2>What is JavaScript?</h2> 
+    Javascript is a programming language used to make webpages dynamic.  
+    <h2>Why learn JavaScript?</h2> 
+    push this button to find out: <button id="findout">button</button> 
+    <h2>Syntax</h2> 
+    <h2>DOM</h2> 
+    <h2>Accessing the DOM</h2> 
+    The DOM is accessed by using a get method though the document object
+    <pre><code>document.getElementById("identification");
+//this get method retrieves a DOM element based on Id
+document.getElementsByTagName("a");
+//this get method retrieves DOM elements based on their HTML tag name
+//<b>NOTE:</b> this method returns an array of elements
+document.getElementsByClassName("subclass");
+//this get method retrieves DOM elements based on their class
+//<b>NOTE:</b> this method returns an array of elements</code></pre>
+    <h2>Properties of DOM elements</h2> 
+    <pre><code>element.innerHTML= //insert desired contents of the element here 
+element.attribute= //insert desired value of the element's specified attribute here 
+element.style.property= //insert desired value of the element's CSS style property here</code></pre>
     </div>
+    <script>
+        var i = 0;
+        function findout() {
+            switch(i) {
+                case 0: 
+                    this.innerHTML = "to do this";
+                    break;
+                case 1:
+                    this.innerHTML = "or this";
+                    break;
+                default:
+                    this.innerHTML = "you pushed the button " + (i+1) + " times";
+                    break;
+             }
+            i++;
+        }
+        document.getElementById("findout").addEventListener("click",findout);
+    </script>
 </body>
 
 </html>

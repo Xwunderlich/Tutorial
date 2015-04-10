@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>Tutorial: Intro to Cascading Style Sheets(CSS)
@@ -62,15 +63,19 @@
   <h2>CSS Basic Syntax</h2>
   <ol>
     <li>Components:
-        <br><img src="img/a.png"/>
+        <br><pre><code class="css">selector {declaration1; declaration2; ... declarationN;}</code></pre>
         <br>CSS commands mainly have 2 components: Selector & Declarations
         <br>
         <br><b>Example:</b>
-        <br><img src="img/b.png"/>
+        <br><pre><code>h1 {color:red; font-size:14px;}</code></pre>
         <br>“h1” is the selector, “color” & “font-size” is the attribute, and “red” & “14px” is the value.
         <br>The semicolon “;” is the standard separator when declaring multiple attributes.
         <br>Declaring attributes on different lines is recommended:
-        <br><img src="img/c.png"/>
+        <br><pre><code>p {
+    text-align: center;
+    color: black;
+    font-family: arial;
+}</code></pre>
     </li>
     
     <li>Upper/Lower Case
@@ -80,14 +85,12 @@
     
     <li>Multiple Selection of Selectors
         <br>Look at the following code:
-        <br><img src="img/d.png"/>
+        <br><pre><code>h1, h2, h3, h4, h5, h6 {
+    color: green;
+}</code></pre>
         <br>By adding a <b>comma “,”</b> between each 2 selectors, multiple selectors can be assigned and share the attributes declared.
     </li>
-    
-    <li>Components:
-        <br><img src="img/a.png"/>
-        <br>CSS commands mainly have 2 components: Selector & Declarations
-    </li>  
+  
   </ol>
   
   <p><b>For more detailed insturctions and reference, please visit: <a href="http://www.w3schools.com/css/default.asp">W3C School Official Website</a></b>.
@@ -98,41 +101,50 @@
   <p>Since we have all the styles of HTML defined in an external .css file, we have to set up a link from the HTML Document to the CSS document in order to get the settings in it. 
   </p>
   
-  <img src="img/e.png"/>
-  
+<pre><code>&lt;head&gt;&lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;&lt;/head&gt;</code></pre>  
   <p>In the HTML File, you can add "link" tag to setup a link to external stylesheet. The "link" tag sits at the beginning of the file.</p>
   
   <p>With the example code above, external stylesheet “mystyle.css” is linked to the HTML file and will format the elements in the HTML.</p>
   
   <p>If one or few HTML documents are trying to get the format in a stylesheet, we can also use the internal stylesheet link to get the connection. During this step we will use "style" tag in HTML document.</p>
   
-  <img src="img/f.png"/>
+<pre><code>&lt;head&gt;
+&lt;style type="text/css"&gt;
+    hr {color: sienna;}
+    p {margin-left: 20px;}
+    body {background-image: url("images/back40.gif");}
+&lt;/style&gt;
+&lt;/head&gt;</code></pre>  
   </blockquote>
 
   <h2>Selectors: The Major Locater in CSS</h2>
   <ol>
     <li>Element Selectors
         <br>Look at the following code:
-        <br><img src="img/g.png"/>
+        <br><pre><code>html {color: black;}
+h1 {color: blue;}
+h2 {color: silver;}
+</code></pre>
         <br>Element Selector is the most common selector in CSS. In the example we selected all the element h1, h2, and the HTML itself.
     </li>
     
     <li>Class Selector
         <br>Look at the following code:
-        <br><img src="img/h.png"/>
+        <br><pre><code>.center {text-align: center;}</code></pre>
         <br>Users can select certain class by adding a <b>period character “.”</b> in front of the class name. In the example, class “center” is selected.
     </li>
     
     <li>ID Selector
         <br>Look at the following code:
-        <br><img src="img/i.png"/>
+        <br><pre><code>#red {color: red;}
+#green {color: green;}</code></pre>
         <br>Users can select the id by adding <b>a hash character “#”</b> in front of the id name. In the example, red color is applied to id red, green color is applied to id green. 
         <br>Be aware, id is unique in a single page, so you can use id selector to choose unique elements.
     </li>
     
     <li>Attribute Selector
         <br>Look at the following code:
-        <br><img src="img/j.png"/>
+        <br><pre><code>[title=W3School] {border: 5px solid blue;}</code></pre>
         <br>Users can select the HTML element with certain attributes with an attribute selector. In this case, all the element with “title=W3School” are selected and set a border with 5px solid blue.
     </li>
     
@@ -143,19 +155,20 @@
         <p>CSS recognizes colors as a set of values, RGB(a, b, c), in which a/b/c ranges from 0 to 255. 
             <br>Easily we can calculate that there are <b>256*256*256 possibilities of color</b>!
         </p>
-        
+        <br />
         <p>Recall how we set a selector to a certain color: </p>
-        <br><img src="img/k.png"/>
+        <br><pre><code>h1 {color: red;}</code></pre>
         <br><p>We can assign a color to selector by typing a simple word.</p>
         <br>
         <br><p>We can also substitute the word description to the color’s hex code:</p>
-        <br><img src="img/l.png"/>
+        <br><pre><code>p {color: #ff0000;}</code></pre>
         <br>
         <br><p>When we know the RGB value of certain color, we can use rgb (a, b, c) to define the color:</p>
-        <br><img src="img/m.png"/>
+        <br><pre><code>p {color: rgb(255,0,0);}
+p {color: rgb(100%,0%,0%);}</code></pre>
         <br>
         <br><p>As we can see, the color processing ability of CSS is impressive, here are some examples for colors in CSS:</p>
-        <br><img src="img/colors.png"/>
+        <br><img src="img/colors.png" width="900px"/>
     </blockquote>
     
     <h2>CSS Box Model</h2>
@@ -168,7 +181,11 @@
             <br><img src="img/box_size.png"/>
             <br>
             <br><p>Corresponding implementation:</p>
-            <br><img src="img/n.png"/>
+            <br><br><pre><code>#box {
+    width: 70px;
+    margin:10px;
+    padding: 5px;                   
+}</code></pre>
         
         
         
